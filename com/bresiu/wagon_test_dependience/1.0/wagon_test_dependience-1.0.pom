@@ -94,8 +94,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>hydra</id>
-			<name>Hydra</name>
+			<id>wagon_test</id>
+			<name>wagon_test</name>
 			<url>git:releases://git@github.com:Bresiu/wagon_test.git</url>
 		</repository>
 	</distributionManagement>
@@ -113,7 +113,7 @@
 			   distributionManagement url was
 			   <url>git:your-branch://git@github.com:yourgithubusername/your-github-repo.git</url>
 			-->
-			<url>https://raw.github.com/Bresiu/wagon_test.git/releases</url>
+			<url>https://raw.github.com/Bresiu/wagon_test/releases</url>
 		</repository>
 	</repositories>
 </project>
