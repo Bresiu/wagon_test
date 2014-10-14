@@ -4,7 +4,7 @@
 
 	<groupId>com.bresiu</groupId>
 	<artifactId>wagon_test</artifactId>
-	<version>1.5</version>
+	<version>1.6-SNAPSHOT</version>
 	<name>wagon_test</name>
 
 	<inceptionYear>2014</inceptionYear>
@@ -14,7 +14,7 @@
 	<scm>
 		<url>https://github.com/Bresiu/wagon_test</url>
 		<developerConnection>scm:git:ssh://github.com/Bresiu/wagon_test.git</developerConnection>
-		<tag>wagon_test-1.5</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
