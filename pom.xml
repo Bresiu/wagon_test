@@ -6,8 +6,19 @@
 
 	<groupId>com.bresiu</groupId>
 	<artifactId>wagon_test</artifactId>
-	<version>1.0</version>
+	<version>1.2-SNAPSHOT</version>
 	<name>wagon_test</name>
+
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>BRS</name>
+	</organization>
+	<scm>
+		<url>https://github.com/Bresiu/wagon_test</url>
+		<developerConnection>scm:git:ssh://github.com/Bresiu/wagon_test.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,6 +35,11 @@
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
 			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bresiu</groupId>
+			<artifactId>wagon_test_dependience</artifactId>
+			<version>1.4</version>
 		</dependency>
 	</dependencies>
 
@@ -51,6 +67,16 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <goals>deploy assembly:single</goals>
+                    <workingDirectory>${basedir}/../${project.name}_checkout</workingDirectory>
+                </configuration>
+            </plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.4</version>
@@ -94,8 +120,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>hydra</id>
-			<name>Hydra</name>
+			<id>wagon_test</id>
+			<name>wagon_test</name>
 			<url>git:releases://git@github.com:Bresiu/wagon_test.git</url>
 		</repository>
 	</distributionManagement>
@@ -113,7 +139,7 @@
 			   distributionManagement url was
 			   <url>git:your-branch://git@github.com:yourgithubusername/your-github-repo.git</url>
 			-->
-			<url>https://raw.github.com/Bresiu/wagon_test.git/releases</url>
+			<url>https://raw.github.com/Bresiu/wagon_test/releases</url>
 		</repository>
 	</repositories>
 </project>

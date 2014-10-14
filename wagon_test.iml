@@ -14,6 +14,7 @@
     <orderEntry type="library" name="Maven: org.apache.maven.wagon:wagon-provider-api:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0.8" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.4" level="project" />
+    <orderEntry type="library" name="Maven: com.bresiu:wagon_test_dependience:1.4" level="project" />
   </component>
 </module>
 
